@@ -26,6 +26,11 @@ footer a:hover{
     cursor: pointer;
     color: var(--vinho);
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
 /*-------------------------------------------*/
 
 /*Fonts|Color Palete---------------------------*/
