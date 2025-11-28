@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*-------------------------------------------*/
+
+/*-------------------------a*/
+header a{
+    color: black;
+    text-decoration: none;
+    transition: 350ms ease-in-out;
+}
+
+header a:hover{
+    cursor: pointer;
+    color: var(--vinho);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: 350ms ease-in-out;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: var(--vinho);
+}
+
+main a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+/*-------------------------------------------*/
+
+/*Fonts|Color Palete---------------------------*/
+:root{
+    --vinho: #531312;
+    --bg-gray: #F2F2F2;
+    --bg-grayb: #424040;
+}
+
+
+
+/*Header-----------------------------------------------*/
+.icon_header{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo_header{
+    width: 100%;
+}
+
+header{
+    margin-top: 10px;
+}
+
+.navbar_col{
+    display: flex;
+    align-items: end;
+}
+
+.col_logo_header{
+    display: flex;
+}
+.navbar_nav{
+    gap: 20px;
+}
+
+@media (max-width:481px){ /*Mobile <= 360px (Samsung)*/
+    .atendimento_header{
+        font-size: 9.5pt;
+    }
+    .logo_header{
+        width: 50%;
+    }
+    .nav_header{
+        width: 120%;
+        font-size: 10pt;
+    }
+
+    .container_header_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav_header_ul{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .col_logo_header{
+        justify-content: center;
+    }
+}
+
+/*--------------------------------------------------*/
+
+/*Faixa de titulo---------------------------------------------*/
+.faixa_titulo{
+    background-color: var(--vinho);
+    color: white;
+    height: 150px;
+    max-width: 100vw;
+}
+
+.faixa_titulo a{
+    text-decoration: none;
+    color: white;
+}
+
+.col_titulo_faixa{
+    display: flex;
+    padding: 20px;
+}
+
+.col_imagem_faixa{
+    background-color: gray;
+    height: 100%;
+}
+
+@media (max-width:481px){ /*Mobile <= 360px (Samsung)*/
+    .faixa_titulo{
+    background-color: var(--vinho);
+    color: white;
+    height: 90px;
+    max-width: 100vw;
+}
+
+.col_imagem_faixa{
+    display: none !important;
+}
+
+.col_faixa_guia{
+    display: none !important;
+}
+
+}
+
+/*------------------------------------------------------*/
+
+/*Main-----------------------------------------------*/
+
+.post_menu_item{
+    padding: 20px;
+    background-color: var(--bg-gray);
+    transition: all ease-in-out 300ms;
+    
+}
+
+.post_menu_item:hover{
+    transform: scale(1.01);
+    transition: all ease-in-out 300ms;
+}
+
+.row_post_menu{
+    gap:10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.tag_menu{
+    color: var(--vinho);
+}
+
+.subtitulo_post_menu{
+    color: var(--vinho);
+}
+
+/*Fotter------------------------------------*/
+.poligono_1{
+    clip-path: polygon(40% 0, 100% 100%, 0 100%);
+    background-color: var(--bg-grayb);
+    width: 100%;
+    height: 100px;
+}
+
+.footer_1{
+    background-color: var(--bg-grayb);
+}
+
+footer{
+     margin-top: 30px;
+     color: white;
+}
+
+.footer_2{
+    background-color: var(--bg-grayb);
+    width: 100%;
+    padding: 20px;
+}
+
+button{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.icon_footer{
+    width: fit-content;
+}
+
+.footer_label_end{
+    text-align: right;
+    align-items: end;
+}
+
+@media (max-width:481px){
+    .poligono_1{
+        display: none;
+    }
+
+    .horario_footer{
+        display: none;
+    }
+
+    .titulo_mapa{
+        display: none;
+    }
+
+    .ul_footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        list-style: none;
+    }
+
+    .footer_label_end{
+        display: none;
+    }
+
+    .hr_footer{
+        display: none;
+    }
+
+    .icon_footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.post_menu_item img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}

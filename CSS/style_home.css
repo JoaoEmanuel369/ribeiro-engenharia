@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+/*-------------------------a*/
+header a{
+    color: black;
+    text-decoration: none;
+    transition: 350ms ease-in-out;
+}
+
+header a:hover{
+    cursor: pointer;
+    color: var(--vinho);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: 350ms ease-in-out;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: var(--vinho);
+}
+/*-------------------------------------------*/
+
+/*Fonts|Color Palete---------------------------*/
+:root{
+    --vinho: #531312;
+    --bg-gray: #F2F2F2;
+    --bg-grayb: #424040;
+}
+/*-------------------------------------------------*/
+@keyframes slideright {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes slideleft {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes aparecer{
+    0%{
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes descer{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/*Header-----------------------------------------------*/
+.icon_header{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo_header{
+    width: 100%;
+}
+
+header{
+    margin-top: 10px;
+}
+
+.navbar_col{
+    display: flex;
+    align-items: end;
+}
+
+.col_logo_header{
+    display: flex;
+}
+.navbar_nav{
+    gap: 20px;
+}
+
+@media (max-width:481px){ /*Mobile <= 360px (Samsung)*/
+    .atendimento_header{
+        font-size: 9.5pt;
+    }
+    .logo_header{
+        width: 50%;
+    }
+    .nav_header{
+        width: 120%;
+        font-size: 10pt;
+    }
+
+    .container_header_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav_header_ul{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .col_logo_header{
+        justify-content: center;
+    }
+}
+
+/*--------------------------------------------------*/
+
+.title{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/chongqing-7094955_1280.jpg");
+    background-size: contain;
+    display: flex;
+    padding: 10px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.title p{
+    max-width: 50ch;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.title img{
+    width: 300px;
+}
+
+.img_container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_header{
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+@media (max-width:481px){
+    .title{
+        display: none;
+    }
+
+    .main_pc{
+        display: none;
+    }
+}
+
+/*----------------------------Main*/
+main p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+main h6{
+    font-size: 1.3em;
+}
+
+main h4{
+    font-size: 1.5em;
+}
+
+.item_section{
+    max-width: 60%;
+    padding: 10px;
+}
+
+.item_section img{
+    max-width: 100%;
+}
+
+.item_section_info{
+    max-width: 50%;
+}
+
+.item_section_info_1{
+    width: 100%;
+}
+
+main li{
+    font-size: 1.2em;
+}
+
+section{
+    margin: 30px;
+}
+
+.btn-primary{
+    background-color: var(--vinho);
+    border: none;
+    padding: 10px;
+    transition: all ease-in-out 350ms;
+}
+
+.btn-primary:hover{
+    background-color: #424040;
+    color: white;
+    transition: all ease-in-out 350ms;
+}
+
+main a{
+    color:var(--vinho)
+}
+
+.card{
+    transition: all 350ms ease-in-out;
+}
+
+.card:hover{
+    cursor: pointer;
+    transition: all 350 ms ease-in-out;
+    transform: scale(1.01);
+}
+
+/*Fotter------------------------------------*/
+.poligono_1{
+    clip-path: polygon(40% 0, 100% 100%, 0 100%);
+    background-color: var(--bg-grayb);
+    width: 100%;
+    height: 100px;
+    border: none;
+}
+
+.footer_1{
+    background-color: var(--bg-grayb);
+}
+
+footer{
+     color: white;
+}
+
+.footer_2{
+    background-color: var(--bg-grayb);
+    width: 100%;
+    padding: 20px;
+}
+
+footer button{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.icon_footer{
+    width: fit-content;
+}
+
+.footer_label_end{
+    text-align: right;
+    align-items: end;
+}
+
+@media (max-width:481px){
+    .poligono_1{
+        display: none;
+    }
+
+    .horario_footer{
+        display: none;
+    }
+
+    .titulo_mapa{
+        display: none;
+    }
+
+    .ul_footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        list-style: none;
+    }
+
+    .footer_label_end{
+        display: none;
+    }
+
+    .hr_footer{
+        display: none;
+    }
+
+    .icon_footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/*--------------------------Mobile*/
+/*-----------------------------main*/
+
+.title_mobile{
+    background-size: cover;
+    color: black;
+    text-align: center;
+    gap: 10px;
+}
+
+.title_mobile img{
+    width: 50%;
+}
+
+.title_mobile p{
+    font-size: 1em;
+    text-align: center;
+}
+
+.title_mobile button{
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: var(--vinho);
+    padding: 3px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
+}
+
+.info_mobile{
+    color: black;
+    margin-top: 50px;
+}
+
+.info_mobile h1{
+    font-size: 2.6em;
+    font-weight: 700;
+}
+
+.info_mobile h5{
+    color: var(--vinho);
+    font-size: 1.3em;
+}
+
+.info_mobile h6{
+    color: var(--bg-grayb);
+    font-size: 1.3em;
+}
+
+.info_mobile p{
+    color: black;
+    font-size: 1em;
+}
+
+.conheca_mais_mobile{
+    text-align: center;
+    display: flex;
+}
+
+.conheca_mais_mobile svg{
+    margin-left: 5px;
+}
+
+.poligono_2{
+    background-color: var(--bg-gray);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    height: 100px;
+    width: 400px;
+    padding: 10px;
+}
+
+.poligono_info{
+    background-color: var(--bg-gray);
+    padding: 10px;
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+}
+
+.poligono_info h5{
+    color: var(--vinho);
+}
+
+.poligono_info h1{
+    font-weight: 700;
+}
+
+.poligono_info p{
+    font-size: 1.3em;
+    color: var(--bg-grayb);
+    text-align: center;
+}
+
+@media (min-width:481px){
+    .main_mobile{
+        display: none;
+    }
+}
+
+.card_mobile{
+    transition: all ease-in-out 350ms;
+    transform: scale(1);
+}
+
+.card_mobile:hover{
+    transition: all ease-in-out 350ms;
+    transform: scale(1.1);
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.card img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
